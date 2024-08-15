@@ -47,7 +47,6 @@ if __name__ == "__main__":
     root = tk.Tk()
     root.title("Pet Virtual")
 
-    # Botões para interagir com o pet
     alimentar_button = tk.Button(root, text="Alimentar", command=alimentar_pet)
     alimentar_button.pack(pady=10)
 
@@ -60,11 +59,9 @@ if __name__ == "__main__":
     sair_button = tk.Button(root, text="Sair", command=sair)
     sair_button.pack(pady=10)
 
-    # Label para mostrar o estado do pet
     estado_label = tk.Label(root, text=f"Felicidade: {pet.felicidade}")
     estado_label.pack(pady=10)
 
-    # Simula a passagem do tempo
     def simular_passagem_tempo():
         while True:
             pet.atualizar_estado()
